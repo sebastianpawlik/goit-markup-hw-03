@@ -10,25 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <!-- <a href="portfolio.html">Portfolio</a> -->
     <title>index</title>
 
 </head>
 <body>
-<header class="index-header">
-    <a href="text" class="underline"><span class="logo1">Web</span><span class="logo2">Studio</span></a>
-    <nav>
-        <ul class="bullets">
-            <li><a class="text-agencja-underline" href="index.html">Agencja</a></li>
-            <li><a class="text-portfolio-underline" href="portfolio.html">Portfolio</a></li>
-            <li><a class="text-kontakt-underline" href="Kontakt">Kontakt</a></li>
+<header class="header">
+    <div class="container">
+    <a href="index.html" class="navigation-logo"><span class="logo1">Web</span><span class="logo2">Studio</span></a>
+    <nav class="navigation">
+        <ul class="bullets navigation-list list">
+            <li class="navigation-list-item"><a class="text-agencja link" href="index.html">Agencja</a></li>
+            <li class="navigation-list-item"><a class="text-portfolio link" href="portfolio.html">Portfolio</a></li>
+            <li class="navigation-list-item"><a class="text-kontakt link" href="Kontakt">Kontakt</a></li>
         </ul>
     </nav>
-    <div>
-        <ul class="bullets">
-            <li><a class="mail-underline" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="phone-underline" href="tel:+48111111111">+48 111 111 111</a></li>
+          <ul class="bullets navigation-list list">
+            <li class="navigation-contacts"><a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="navigation-contacts"><a class="phone link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
     </div>
 </header>
@@ -37,9 +38,10 @@
         <h1 class="index-main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
         <button class="index-button" type="button">Zamów usługę</button>
     </section>    
+
     <section class="section-text-blocks">   
-    <ul class="bullets">
-    <li>  
+    <ul class="bullets index-text-container">
+    <li class="text-item">  
         <h2 class="text-block-header">
         LOREM IPSUM
         </h2>
@@ -47,7 +49,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
         </p>
     </li>
-    <li>  
+    <li class="text-item">  
         <h2 class="text-block-header">
         LOREM IPSUM
         </h2>
@@ -55,7 +57,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
         </p>
     </li>
-    <li>  
+    <li class="text-item">  
         <h2 class="text-block-header">
         LOREM IPSUM
         </h2>
@@ -63,7 +65,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
         </p>
     </li>
-    <li>  
+    <li class="text-item">  
         <h2 class="text-block-header">
         LOREM IPSUM
         </h2>
@@ -75,22 +77,22 @@
     </section>
     <section class="section-whatwedo">
         <h2 class="text-pictures-header1">Czym sie zajmujemy</h2>
-        <ul class="bullets">
-            <li>
+        <ul class="bullets pictures-whatwedo">
+            <li class="pic-whatwedo">
                 <img src="images/whatwedo1.jpg" alt="rece piszące na klawiaturze przed ekranem" width="370" height="294">
             </li>
-            <li>
+            <li class="pic-whatwedo">
                 <img src="images/whatwedo2.jpg" alt="lewa ręka trzymajaca telfon komórkowy prawa na klawiaturze laptopa" width="370" height="294">
             </li>
-            <li>
+            <li class="pic-whatwedo">
                 <img src="images/whatwedo3.jpg" alt="lewa ręka trzymajaca tablet nad klawiaturą na biurku" width="370" height="294">
             </li> 
         </ul>
     </section>
-    <section class="section-team">
+    <div class="team">
         <h2 class="text-pictures-header2">Nasz zespół</h2>
-        <ul class="bullets">
-            <li>
+        <ul class="bullets pictures-team">
+            <li picture-team>
                 <figure>
                     <img src="images/johndoe1.jpg" alt="uśmiechniety mężczyzna z brodą" width="270" height="260">
                     <figcaption>
@@ -135,11 +137,11 @@
                 </figure>
             </li>
         </ul>
-    </section>
+    </div>
 </main>
 <footer>
     <div class="footer-background">
-        <a href="text" class="underline"><span class="logo1">Web</span><span class="logo2foot">Studio</span></a>
+        <a href="index.html" class="footer-logo"><span class="logo1">Web</span><span class="logo2foot">Studio</span></a>
         <ul class="bullets footer-background">
             <li><address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address></li>
             <li><address class="index-footer-mail">info@devstudio.com</address></li>

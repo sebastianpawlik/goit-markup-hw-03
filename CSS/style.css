@@ -6,12 +6,229 @@
     --main-white: #FFFFFF;
     --second-white: #F5F4FA;
     --main-silver: #757575;
-   
-  }
-  body {
+    }
+body {
     font-family: "Roboto", sans-serif;
     color: var(--black-main);
   }
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+ul, ol{
+    margin: 0;
+    padding:0;
+}
+a {
+    padding:0;
+}
+.list {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+/* stylowanie naglowka nawigacji */
+.header .container{
+    display: flex;}
+.container{
+    width: 1170px;
+    height: 80px;
+    padding: 0 15 px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 215px;
+    margin-right:215px;
+}
+.navigation {
+    display: flex;
+}
+.navigation-logo {
+    text-decoration: none;
+    width: 145px ;
+    height: 31px;
+    margin-left: 0;
+    margin-right: 93px;
+}
+.navigation-list{
+    display: flex;
+       }
+.navigation-list-item:not(:last-child){
+    margin-right: 46px;
+}
+.navigation-list-item:last-child{
+    margin-right: 317px;
+}
+.navigation-contacts:first-child{
+    margin-right: 50px;
+}
+.navigation-contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+/* stylowanie h1 i button w index */
+.section-header{
+    display:block;
+    box-sizing: border-box;
+    padding: 200px 452px 280px 452px;
+    margin:0;
+    width:1600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-grey);
+}
+.index-main-header{
+    margin: 0;
+    padding: 15px auto;
+    width: 696px;
+    height: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.16;
+    align-items: center;
+    letter-spacing: 0.06em;
+    justify-content: center;
+    text-align: center
+     }
+   .index-button {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    justify-content: center;
+     }
+
+/* stylowanie bloków tekstowych w index */
+.index-text-container{
+    display: flex;
+    max-width: 1170px;
+    margin-left: 101px;
+    margin: 94px 215px;
+   }
+.text-item{
+    width: 270px;
+    height: 101px;
+    margin-right: 30px;
+}
+.text-block-header {
+    display:flex;
+    width: 270px;
+    height: 16px;
+    margin-bottom:10px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--black-main);
+    letter-spacing: 0.03em;
+    justify-content: flex-start;
+}
+.text-block {
+    display:flex;
+    width: 270px;
+    height: 75px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--main-silver);
+    letter-spacing: 0.03em;
+    align-items:flex-start;
+    justify-content: flex-start;
+   }
+
+/* stylowanie obrazów czym się zajmujemy */
+
+.text-pictures-header1{
+    display: flex 
+    width: 352px
+    height: 42px
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    justify-content:center;
+   } 
+.pictures-whatwedo {
+    display: flex;
+    margin-top:50px;
+    margin-bottom:94px;
+    margin-left:215px;
+    margin-right: 215px;
+    width: 1170px
+    height: 294px
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    justify-content:center;
+  }
+.pic-whatwedo:not(:last-child){
+    margin-right: 30px;
+}
+/* stylowanie obrazów nasz zespol */
+
+.team {
+    display:block
+    margin: 0;
+    background-color: var(--second-white);
+    padding: 94px 215px;
+    margin:0;
+    width:1600px;
+    height: 648px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-pictures-header2{
+    display: flex 
+    margin-top: 94px;   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    justify-content:center;
+   } 
+   .pictures-team{
+    display:flex;
+    width:1170px;
+    height:368px;
+    margin-bottom:94px;
+    margin-right:30px;
+}
+
+/* stylowanie kontenera portfolio zdjęcia */
+.pic-container {
+    display: flex;  
+    width: 1600px;
+    height: 1272px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+.portfolio-pic{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+.pic-item{
+        flex-wrap: wrap;
+        gap: 30px;
+        /* flex-basis: flex-basis: ((100% - 60px) / 3); */
+    }
+
 .section-header {
     background: var(--background-grey); 
     color: var(--main-white);   
@@ -22,9 +239,11 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 2.64px;
 }
 /* <!-- button z index page --> */
 .index-button {
+    dispaly: flex;
     font-family: var(--font-family);
     border-color:var(--main-blue);
     background: var(--main-blue);
@@ -33,25 +252,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    cursor: pointer
+    align-items: center;
+    }
 
-}
-.text-block-header {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--black-main);
-}
-.text-block {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--main-silver);
-}
 
 .text-pictures-header1{
     font-family: var(--font-family);
@@ -60,6 +263,7 @@
     font-size: 36px;
     line-height: 1.17;
     color: var(--black-main);
+    text-align: center;
 }
 .text-pictures-header2{
 font-family: var(--font-family);
@@ -68,6 +272,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 color: var(--black-main);
+text-align: center;
 }
 .team-names{
 font-family: var(--font-family);
@@ -76,6 +281,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 color: var(--black-main);
+text-align: center;
 }
 .team-positions {
 font-family: var(--font-family);
@@ -83,8 +289,8 @@ font-style: normal;
 font-size: 16px;
 line-height: 1.19;
 color: var(--main-silver);
+text-align: center;
 }
-
 
 /* stylowanie Portfolio.html */
 body {
@@ -95,11 +301,6 @@ body {
 .bullets {
      list-style: none;
      }
-.underline {
-    text-decoration: none;
-    cursor: pointer
-}
-
 .logo1 {
     font-family: 'Raleway';
     font-style: normal;
@@ -118,7 +319,8 @@ body {
     color: var(--second-black);
     text-decoration: none;
  }
- .text-agencja-underline {
+
+ .text-agencja {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
@@ -127,10 +329,10 @@ body {
     color: var(--black-main);
     text-decoration: none;
 }
-.text-agencja-underline:hover{
+.text-agencja:hover{
     color: var(--main-blue)
 }
-.text-portfolio-underline {
+.text-portfolio {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
@@ -139,10 +341,10 @@ body {
     color: var(--main-black);
     text-decoration: none;
  }
-.text-portfolio-underline:hover{
+.text-portfolio:hover{
     color: var(--main-blue)
 }
-.text-kontakt-underline {
+.text-kontakt {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
@@ -151,10 +353,10 @@ body {
     color: var(--black-main);
     text-decoration: none;
  }
- .text-kontakt-underline:hover{
+ .text-kontakt:hover{
     color: var(--main-blue)
  }
-.phone-underline{
+.phone{
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
@@ -163,10 +365,10 @@ body {
     text-decoration: none;
     color: var(--main-silver);
  }
- .phone-underline:hover{
+ .phone:hover{
     color: var(--main-blue)
  }
-.mail-underline{
+.mail{
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
@@ -175,7 +377,7 @@ body {
     text-decoration: none;
     color: var(--main-silver);
     }
-.mail-underline:hover{
+.mail:hover{
         color: var(--main-blue)
      }
 .portfolio-buttons {
@@ -185,19 +387,6 @@ body {
     font-size: 16px;
     line-height: 1.62;
 }
-/* .button-all {
-    color:  var(--main-white);
-    background-color: var(--main-blue);
-    border-color: var(--main-blue);
-    cursor: pointer;
-     }
-.portfolio-buttons .button-all:hover
-/* .portfolio-buttons .button-all:focus */
-
-    /* border: solid;
-    border-color: var(--main-blue);
-    text-decoration: none
-} */
 .button {
     font-family: var(--font-family);
     color: var(--black-main)
@@ -248,3 +437,7 @@ body {
     color:  var(--main-white);
     text-decoration: none;
 }
+/* .menu{
+    display:flex
+}
+
