@@ -59,7 +59,7 @@ img {
     padding: 0 15 px;
     align-items: center;
     justify-content: left;
-       border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .navigation {
     display: flex;
