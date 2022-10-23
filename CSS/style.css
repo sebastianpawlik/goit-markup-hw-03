@@ -49,6 +49,18 @@ img {
     color: var(--second-black);
     text-decoration: none;
  }
+.container{
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    }
+header{
+    display:flex;
+    border-bottom: 1px solid #ECECEC;
+    max-width:1600px;
+    margin: 0 auto;
+}
+
 /* stylowanie naglowka nawigacji */
 .header .container{
     display: flex;
@@ -58,7 +70,7 @@ img {
     padding: 0 15 px;
     align-items: center;
     justify-content: left;
-    border-bottom: 1px solid #ECECEC;
+   
 }
 .navigation {
     display: flex;
@@ -89,7 +101,7 @@ img {
 }
 
 /* stylowanie h1 i button w index */
-.section-header {
+.header-container {
     background: var(--background-grey); 
     color: var(--main-white);   
     display: flex;
@@ -98,23 +110,23 @@ img {
     height: 600px;
     margin: 0 auto;
     align-items: center;
+    justify-content:center;
     }
 .index-main-header{
+    display: flex;
     width: 696px;
     height: 120px;
-    text-align: center;
-    margin-top:200px;
-    margin-bottom:280px;
-    margin: 0 auto;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.16;
-    align-items: center;
     letter-spacing: 0.06em;
-    margin-top: 200px;
-         }
+    text-align: center;
+    margin-top:200px;
+    justify-content:center;}
+     
 .index-button {
+    display:flex;
     background-color: var(--main-blue);
     color: var(--main-white);
     font-weight: 700;
@@ -127,10 +139,12 @@ img {
     margin-bottom: 200px;
     margin-top: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    justify-content:center;
+    align-items: center;
     }
 
 /* stylowanie bloków tekstowych w index */
-.text-container{
+.container{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -181,21 +195,17 @@ img {
     margin: 0 auto;
     flex-direction: column;
     }
-.pictures-whatwedo{
-    display: flex;
-    justify-content: center;
-    margin-block: 94px;
-    }
 .text-pictures-header1{
-    width: 352px
-    height: 42px
+    display:flex;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-align:center;
+    justify-content: center;
      } 
 .pictures-whatwedo {
+    display: flex;
+    justify-content: center;
     margin-top:50px;
     margin-bottom:94px;
     margin-left:215px;
@@ -212,30 +222,34 @@ img {
 }
 /* stylowanie obrazów nasz zespol */
 .team-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1600px;
-    height: 648px;
-    margin: 0 auto;
-    align-items: center;
-    background-color: var(--second-white)
-}
+        display: flex;
+        flex-direction: column;
+        max-width: 1600px;
+        height: 648px;
+        margin: 0 auto;
+        align-items: center;
+        background-color: var(--second-white);
+        }
+    
 .text-pictures-header2{
+    display:flex:
     width: 210px;
     height: 42px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-top: 94px
+    margin-top: 94px;
+    align-items:center;
+    justify-content: center;
      } 
 .pictures-team{
     display:flex;
     width: 1200px;
     height:368px;
-    margin: 0 auto;
+    margin-top:50px;
     margin-bottom:94px;
-    justify-content: center;
+    align-items:center;
         }
 .single-picture {
     width:270px;
@@ -400,7 +414,7 @@ body {
     width: 100%;
     gap: 8px;
     margin-top: 94px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .button {
     font-family: var(--font-family);
@@ -423,14 +437,13 @@ body {
     cursor: pointer;
      }
  .button:not(:last-child){
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 .portfolio-pic{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     max-width: 1200px;
     gap: 30px;
     margin-bottom: 94px;
@@ -450,6 +463,7 @@ figcaption{
     border-color: var( --second-white)
 }
 .h3-pic-item{
+    display:flex;
     margin-top:20px;
     margin-left:24px;
     width:322px;
@@ -457,6 +471,7 @@ figcaption{
     align-items:center;
 }
 .p-pic-item{
+    display:flex;
     width:322px;
     height:30px;
     margin-top:4px;
