@@ -30,6 +30,7 @@ a {
 img {
     display: block;
 }
+
 /* stylowanie logo */
 .logo1 {
     font-family: 'Raleway';
@@ -51,30 +52,29 @@ img {
  }
 .container{
     display: flex;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     }
-header{
+.header{
     display:flex;
     border-bottom: 1px solid #ECECEC;
     max-width:1600px;
     margin: 0 auto;
-}
+    }
 
 /* stylowanie naglowka nawigacji */
 .header .container{
     display: flex;
     width: 1200px;
-    margin: 0 auto;
     height: 80px;
-    padding: 0 15 px;
+    padding: 0 15px;
+    margin: 0 auto;
     align-items: center;
     justify-content: left;
-   
-}
+      }
 .navigation {
     display: flex;
-}
+   }
 .navigation-logo {
     text-decoration: none;
     width: 145px ;
@@ -122,7 +122,6 @@ header{
     line-height: 1.16;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top:200px;
     justify-content:center;}
      
 .index-button {
@@ -136,7 +135,6 @@ header{
     width: 200px;
     height: 50px;
     border-style: none;
-    margin-bottom: 200px;
     margin-top: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     justify-content:center;
@@ -144,25 +142,16 @@ header{
     }
 
 /* stylowanie bloków tekstowych w index */
-.container{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    }
+
 .index-text-container{
     display: flex;
     justify-content: center;
-    margin-block: 94px;
-      }
+    }
 .text-item{
-    width: 270px;
-    height: 101px;
     margin-right: 30px;
     }
 .text-block-header {
     display:flex;
-    width: 270px;
-    height: 16px;
     margin-bottom:10px;
     font-family: var(--font-family);
     font-style: normal;
@@ -176,8 +165,6 @@ header{
 }
 .text-block {
     display:flex;
-    width: 270px;
-    height: 75px;
     font-family: var(--font-family);
     font-style: normal;
     font-size: 14px;
@@ -207,11 +194,6 @@ header{
     display: flex;
     justify-content: center;
     margin-top:50px;
-    margin-bottom:94px;
-    margin-left:215px;
-    margin-right: 215px;
-    width: 1170px
-    height: 294px
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -228,33 +210,27 @@ header{
         height: 648px;
         margin: 0 auto;
         align-items: center;
+        justify-content: center;
         background-color: var(--second-white);
         }
-    
 .text-pictures-header2{
     display:flex:
-    width: 210px;
-    height: 42px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-top: 94px;
     align-items:center;
     justify-content: center;
      } 
 .pictures-team{
     display:flex;
-    width: 1200px;
-    height:368px;
     margin-top:50px;
-    margin-bottom:94px;
     align-items:center;
+    justify-content: center;
         }
 .single-picture {
     width:270px;
     margin-right:30px;
-    margin-top: 50px;
     background-color: var(--main-white);
     text-align: center;          
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -279,36 +255,46 @@ header{
   }
   
 /* stylowanie footera */
-.footer-background{
+.footer-background {
     display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: var(--background-grey); 
     max-width: 1600px;
     height: 252px;
     margin: 0 auto;
-    }
-.footer-background-list{
-    margin-left:215px;
+    background: var(--background-grey); 
+    justify-content: center;
+      }
+.footer-container{
+    display:flex;
+    width:1200px;
+    flex-direction: column;
+    align-items:flex-start
+}
+.footer-background-list {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-top:20px;
     color:  var(--main-white);
     text-decoration: none;
     font-style: normal;
 }
 .footer-address {
+    display:flex;
     color:  var(--main-white);
     font-style: normal;
-   }
+      }
 .index-footer-mail {
+    display:flex;
     color: var(--main-silver);
     font-style: normal;
     margin-top: 9px;
 }
 .footer-phone {
+    display:flex;
     color: var(--main-silver);
     font-style: normal;
     margin-top: 9px;
-    padding-bottom: 60px;
+  
 }
 .portfolio-footer-mail {
      color: var(--main-silver);
@@ -316,8 +302,7 @@ header{
      font-style: normal;
        }
 .footer-logo{
-    margin-left:215px;
-    padding-top:60px;
+    margin-top:60px;
     text-decoration: none;
 }
  .logo2foot {
@@ -404,6 +389,11 @@ body {
     flex-direction:column;
     width:1200px;
     margin: 0 auto;
+    /* padding-bottom: 94px; */
+}
+.section{
+    background-color: var(--main-white); 
+    margin-top:94px;
 }
 .portfolio-buttons{
     display: flex;
@@ -413,8 +403,7 @@ body {
     max-width: 1200px;
     width: 100%;
     gap: 8px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
 }
 .button {
     font-family: var(--font-family);
@@ -436,46 +425,34 @@ body {
     border-color: var(--main-blue);
     cursor: pointer;
      }
- .button:not(:last-child){
-    /* margin-right: 8px; */
-}
+ 
 .portfolio-pic{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1200px;
     gap: 30px;
-    margin-bottom: 94px;
-}
+    }
 figure{
     margin: 0;
+
 }
 figcaption{
-    width:370px;
-    height:110px;
-}
+    display:flex;
+    flex-direction: column;
+    }
 .pic-item {
+    display:flex;
     flex-basis: calc((100% - (370px*3)) / 3);
-}
+   }
 .pic-item figcaption {
     border: 1px solid;
     border-color: var( --second-white)
 }
 .h3-pic-item{
-    display:flex;
     margin-top:20px;
     margin-left:24px;
-    width:322px;
-    height:36px;
-    align-items:center;
-}
+  }
 .p-pic-item{
-    display:flex;
-    width:322px;
-    height:30px;
     margin-top:4px;
     margin-left:24px;
-    align-items:center;
     }
- 
