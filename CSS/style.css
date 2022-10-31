@@ -31,7 +31,16 @@ img {
     display: block;
 }
 
-/* stylowanie logo */
+.section {
+    background: var(--main-white);
+    padding: 94px 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    /* stylowanie logo */
 .logo1 {
     font-family: 'Raleway';
     font-style: normal;
@@ -50,37 +59,19 @@ img {
     color: var(--second-black);
     text-decoration: none;
  }
-.container{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    }
+    
     /* stylowanie naglowka nawigacji */
-  .header {
-    display:flex;
+.header {
+   
+ }   
+.navigation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 79px;
+    margin:0 auto;
     border-bottom: 1px solid #ECECEC;
-    max-width:1600px;
-    margin: 0 auto;
-    display: flex;
-    height: 80px;
-    padding: 0 15px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: left;
        }
-
-/* .header .container{
-    display: flex;
-    max-width:1600px;
-    height: 80px;
-    padding: 0 15px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: left;
-      } */
-.navigation {
-    display: flex;
-   }
 .navigation-logo {
     text-decoration: none;
     width: 145px ;
@@ -90,20 +81,20 @@ img {
 }
 .navigation-list{
     display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:140px;
        }
+
 .navigation-list-item:not(:last-child){
     margin-right: 46px;
 }
-.navigation-list-item:last-child{
-    margin-right: 371px;
-}
-.navigation-contacts:first-child{
-    margin-right: 50px;
+.navigation-list:last-child{
+    margin-right: 0;
 }
 .navigation-contacts {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 0px;
+    margin-right: 50px;
 }
 
 /* stylowanie h1 i button w index */
@@ -117,7 +108,7 @@ img {
     margin: 0 auto;
     align-items: center;
     justify-content:center;
-    }
+     }
 .index-main-header{
     display: flex;
     width: 696px;
@@ -154,9 +145,6 @@ img {
     margin: 0 auto;
     justify-content: center;
     }
-.text-item{
-    margin-right: 30px;
-    }
 .text-block-header {
     display:flex;
     margin-bottom:10px;
@@ -183,11 +171,8 @@ img {
    }
 
 /* stylowanie obrazów czym się zajmujemy */
-.whatwedo-container{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: column;
+.whatwedo-container {
+     flex-direction: column;
     }
 .text-pictures-header1{
     display:flex;
@@ -210,51 +195,48 @@ img {
     margin-right: 30px;
 }
 
-
 /* stylowanie obrazów nasz zespol */
 .team-container {
-        display: flex;
-        flex-direction: column;
-        /* max-width: 1600px; */
-        /* height: 648px; */
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--second-white);
-        padding: 94px 0;
-        }
-.text-pictures-header2{
-    display:flex:
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--second-white);
+    }
+.text-pictures-header2 {
     font-weight: 700;
+    padding-top: 94px;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    align-items:center;
-    justify-content: center;
      } 
 .pictures-team{
     display:flex;
-    margin-top:50px;
-    align-items:center;
     justify-content: center;
-        }
+    margin-top:50px;
+    margin-bottom: 94px;
+    align-items:center;
+    }
+
 .single-picture {
     width:270px;
-    margin-right:30px;
     background-color: var(--main-white);
     text-align: center;          
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
                   0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-  }
- .team-names {
+    }
+  .picture-team:not(:last-child){
+    margin-right: 30px;
+    }
+   .team-names {
     width:270px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
+    padding-top: 30px;
+     }
   .team-positions {
     width:270px;
     font-weight: 400;
@@ -262,23 +244,19 @@ img {
     line-height: 1.19;
     color: var(--main-silver);
     padding-bottom: 30px;
-  }
+    }
   
 /* stylowanie footera */
 .footer-background {
-    display:flex;
-    /* max-width: 1600px; */
+    max-width: 1600px;
     height: 252px;
-    margin: 0 auto;
     background: var(--background-grey); 
-    justify-content: center;
-      }
-.footer-container{
+    padding-bottom: ;
+    }
+.footer-container {
     display:flex;
-    width:1200px;
     flex-direction: column;
-    align-items:flex-start
-}
+    }
 .footer-background-list {
     display:flex;
     flex-direction: column;
@@ -394,16 +372,10 @@ body {
 .mail:hover{
         color: var(--main-blue)
      }
-  
-   
-.section {
-        background: var(--main-white);
-        padding: 94px 0;}
+     
 .wrapper{
     display:flex;
     flex-wrap: wrap;
-    /* flex-direction:column; */
-    /* margin: 0 auto; */
     }
 
 .portfolio-buttons{
