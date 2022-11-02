@@ -59,24 +59,28 @@ img {
     color: var(--second-black);
     text-decoration: none;
  }
-    
-    /* stylowanie naglowka nawigacji */
-header {
+ header {
     border-bottom: 1px solid #ECECEC;
-    
- }   
+     } 
+
+    /* stylowanie naglowka nawigacji */
 .navigation-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 79px;
     margin:0 auto;
-    
-       }
+     }
+.left-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 .navigation-logo {
     display: flex;
     text-decoration: none;
-    width: 145px ;
+    /* width: 145px ; */
     height: 31px;
     margin-left: 0;
     margin-right: 93px;
