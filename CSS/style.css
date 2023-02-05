@@ -1,0 +1,189 @@
+:root {
+    --black-main: #212121;
+    --second-black: #000000;
+    --main-blue: #2196F3;
+    --background-grey: #2F303A;
+    --main-white: #FFFFFF;
+    --second-white: #F5F4FA;
+    --main-silver: #757575;
+    --footer-silver: rgba(255, 255, 255, 0.6);
+   }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: var(--black-main);
+  }
+
+    /* STYLIZACJA NAWIGACJI */
+
+.main-navigation-bullets {
+    list-style: none;
+    }    
+.main-navigation-logo {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo1 {
+      color: var(--main-blue);
+ }
+.logo2 {
+    color: var(--second-black);
+}
+.main-navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;}
+
+.main-navigation .text {
+    color: var(--black-main);
+}
+.main-navigation .contacts {
+    color: var(--main-silver);
+   }
+ .main-navigation:hover {
+    color: var(--main-blue)
+ }
+ .main-navigation:focus {
+    color: var(--main-blue)
+ }
+
+/* STYLIZACJA BODY - STUDIO */
+
+
+/* STYLIZACJA SEKCJI MAIN */
+.main-section {
+    background: var(--background-grey); 
+    color: var(--main-white); 
+    }
+.main-section-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+.main-section-button {
+    border-color:var(--main-blue);
+    background: var(--main-blue);
+    color:  var(--main-white);  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 41px 10px 42px;
+}
+
+/* STYLIZACJA SEKCJI TEXT-BLOCKS */
+
+.text-container-bullets {
+    list-style: none;
+    }
+.text-container-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--black-main);
+}
+.text-container-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--main-silver);
+}
+
+/* STYLIZACJA SEKCJI PICTURES-CONTAINER */
+.pictures-container-bullets {
+    list-style: none;
+    }
+.pictures-container-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--black-main);
+}
+/* STYLIZACJA SEKCJI TEAM MEMBERS */
+.team-members-container {
+    background-color:  var(--second-white);
+ }
+.team-members-container-bullets {
+    list-style: none;
+    }
+.team-members-container-header{
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+color: var(--black-main);
+}
+.team-members-container-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+color: var(--black-main);
+}
+.team-members-container-positions {
+font-size: 16px;
+line-height: 1.19;
+color: var(--main-silver);
+}
+
+/* STYLIZACJA FOOTERA */
+
+.footer-background{
+    background: var(--background-grey);
+}
+.footer-contacts{
+    color: var(--footer-silver);
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+   }
+.footer-address {
+    color:  var(--main-white);
+     }
+.footer-phone-portfolio {
+    text-decoration: underline;
+    }
+.logo2-footer{
+    color:  var(--main-white);
+}
+     
+/* STYLIZACJA BODY - PORTFOLIO */
+
+.portfolio-button {
+    color: var(--black-main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background: var(--second-white);
+    border: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+.portfolio-button:hover {
+    color:  var(--main-white);
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    cursor: pointer;
+     }
+.portfolio-pictures-container-bullets {
+    list-style: none;
+     }
+.portfolio-pictures-container-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;  
+     }
+.portfolio-pictures-container-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87px;
+    letter-spacing: 0.03em;
+    }
